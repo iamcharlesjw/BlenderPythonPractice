@@ -29,7 +29,7 @@ current_angle = angle_step
 count = int(360 / angle_step)
 
 # stack and rotate the mesh
-while current_angle <= 360:
+for i in range(count):
 
     # duplicate the mesh
     bpy.ops.object.duplicate(linked=True)
